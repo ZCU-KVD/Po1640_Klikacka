@@ -8,11 +8,12 @@
 			Radka = radka;
 			Sloupec = sloupec;
 		}
+		
 
 		public byte Hodnota { get; private set; }
 		public byte Radka { get; }
 		public byte Sloupec { get;}
 		public byte StyleClassIndex { get; set; } = 0;
-		public string StyleClassName => $"barva-{StyleClassIndex}";
+		public virtual string StyleClassName => $"barva-{StyleClassIndex}";
 	}
 }
